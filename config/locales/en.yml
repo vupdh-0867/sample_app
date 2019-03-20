@@ -1,33 +1,38 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  layouts:
+    application:
+      title: Ruby on Rails Tutorial Sample App
+      English: English
+      Vietnamese: Vietnamese
+  static_pages:
+    about:
+      title: About
+      heading: About page
+      first_paragraph: The
+      second_paragraph: is a
+      third_paragraph: and
+      fourth_paragraph: to teach web development with
+      final_paragraph: . This is the sample application for the tutorial.
+      first_hyperlink: Ruby on Rails Tutorial
+      second_hyperlink: book
+      third_hyperlink: screencast series
+      final_hyperlink: Ruby on Rails
+    contact:
+      title: Contact
+      heading: Contact
+      paragraph: Contact the Ruby on Rails Tutorial about the sample app at the
+      hyperlink: contact page
+    help:
+      title: Help
+      heading: Help
+      first_paragraph: Get help on the Ruby on Rails Tutorial at the
+      second_paragraph: To get help on this sample app, see the
+      final_paragraph: book
+      first_hyperlink: Rails Tutorial help page
+      second_hyperlink: Ruby on Rails Tutorial
+    home:
+      title: Home
+      heading: Sample App
+      first_paragraph: This is the home page for the
+      hyperlink: Ruby on Rails Tutorial
+      second_paragraph: sample application.

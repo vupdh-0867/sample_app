@@ -1,0 +1,38 @@
+vi:
+  layouts:
+    application:
+      title: Hướng dẫn làm ứng dụng mẫu với Ruby on Rails
+      English: Tiếng Anh
+      Vietnamese: Tiếng Việt
+  static_pages:
+    about:
+      title: Thông tin
+      heading: Trang thông tin
+      first_paragraph: Cuốn
+      second_paragraph: là một
+      third_paragraph: gồm
+      fourth_paragraph: để  dạy lập trình web với
+      final_paragraph: . Đây là ứng dụng mẫu của loạt hướng dẫn này.
+      first_hyperlink: Hướng dẫn Ruby on Rails
+      second_hyperlink: quyển sách
+      third_hyperlink: một loạt các hướng dẫn kèm hình ảnh
+      final_hyperlink: ngôn ngữ Ruby on Rails
+    contact:
+      title: Liên hệ
+      heading: Trang liên hệ
+      paragraph: Liên hệ với "Ruby on Rails Tutorial" về ứng dụng mẫu này tại
+      hyperlink: trang liên hệ
+    help:
+      title: Trợ giúp
+      heading: Trang trợ giúp
+      first_paragraph: Mọi thắc mắc trong cuốn "Ruby on Rails Tutorial" liên hệ tại
+      second_paragraph: Mọi thắc mắc về ứng dụng mẫu này, xem trong cuốn
+      final_paragraph: này
+      first_hyperlink: trang trợ giúp Rails Tutorial
+      second_hyperlink: Ruby on Rails Tutorial
+    home:
+      title: Trang chủ
+      heading: Ứng dụng mẫu
+      first_paragraph: Đây là trang chủ của
+      hyperlink: Hướng dẫn Ruby on Rails
+      second_paragraph: ứng dụng mẫu.
