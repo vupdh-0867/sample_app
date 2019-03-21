@@ -24,9 +24,15 @@
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
+/config/database.yml
+
+# Ignore database config file for security and more.
 /config/master.key
 
 # Ignore Rubocop rules
 .rubocop.yml
 .rubocop_disabled.yml
 .rubocop_enabled.yml
+
+# Ignore Guard file
+Guardfile
