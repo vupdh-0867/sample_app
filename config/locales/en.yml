@@ -2,10 +2,25 @@ en:
   helpers:
     base_title: Ruby on Rails Tutorial Sample App
   layouts:
+    header:
+      name: Sample app
+      home: Home
+      help: Help
+      login: Log in
     application:
       title: Ruby on Rails Tutorial Sample App
       English: English
       Vietnamese: Vietnamese
+    footer:
+      English: English
+      Vietnamese: Vietnamese
+      about: About
+      contact: Contact
+      news: News
+      first_author_title: The
+      book_hyperlink: Ruby on Rails Tutorial
+      second_author_title: by
+      author_hyperlink: Michael Hartl
   static_pages:
     about:
       title: About
@@ -38,3 +53,9 @@ en:
       first_paragraph: This is the home page for the
       hyperlink: Ruby on Rails Tutorial
       second_paragraph: sample application.
+      register_button: Sign up now!
+  users:
+    new:
+      title: Sign up
+      heading: Sign up
+      paragraph: This will be a signup page for new users.

@@ -4,6 +4,7 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 ruby "2.5.1"
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails"
+gem "bootstrap-sass", "3.3.7"
 gem "rails", "~> 5.2.2", ">= 5.2.2.1"
 # Use mysql as the database for Active Record
 gem "mysql2", ">= 0.4.4", "< 0.6.0"
@@ -65,6 +66,7 @@ group :test do
   gem "guard", "~> 2.15.0"
   gem "guard-minitest"
   gem "minitest-reporters"
+  gem "rails-controller-testing", "1.0.2"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
