@@ -1,7 +1,14 @@
 vi:
+  will_paginate:
+    next_label: Trang kế
+    previous_label: Trang trước
   controllers:
     users_controller:
       user_not_found: Không tìm thấy thông tin tài khoản này
+      update_success: Cập nhật thành công
+      not_logged_in_yet: Bạn chưa đăng nhập, vui lòng đăng nhập để tiếp tục.
+      delete_success: Xóa thành công
+      delete_fail: Xóa thất bại, vui lòng kiểm tra lại
     sessions_controller:
       login_fail_message: Email hoặc mật khẩu không đúng
   helpers:
@@ -11,7 +18,7 @@ vi:
         name: Tên
         email: Địa chỉ email
         password: Mật khẩu
-        pasword_confirmation: Xác Nhận mật khẩu
+        password_confirmation: Xác Nhận mật khẩu
       session:
         email: Địa chỉ email
         password: Mật khẩu
@@ -80,6 +87,18 @@ vi:
       password: Mật khẩu
       password_confirmation: Nhập lại mật khẩu
       submit_button: Tạo tài khoản
+    edit:
+      title: Sửa thông tin người dùng
+      heading: Cập nhật thông tin
+      password_confirmation: Nhập lại mật khẩu
+      submit_button: Cập nhật
+      change_avatar_hyperlink: đổi ảnh
+    index:
+      title: Tất cả người dùng
+      heading: Tất cả người dùng
+    user:
+      delete_hyperlink: Xóa
+      confirm_delete_message: Bạn có chắc chắn muốn xóa không?
   messages:
     signup:
       signup_successfully: Chào mừng đến với ứng dụng mẫu!
@@ -90,4 +109,4 @@ vi:
       login: Đăng nhập
       newuser: Người dùng mới
       signup: Đăng ký ngay !
-      remember_me: Nhớ mật khẩu
+      remember_me: Giữ tôi đăng nhập
