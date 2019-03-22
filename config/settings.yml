@@ -7,3 +7,4 @@ app:
   helper:
     users_helper:
       avatar_size: 80
+  yes_remember_me: 1
