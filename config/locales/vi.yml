@@ -1,4 +1,6 @@
 vi:
+  helpers:
+    base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
   layouts:
     application:
       title: Hướng dẫn làm ứng dụng mẫu với Ruby on Rails
