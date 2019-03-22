@@ -9,8 +9,13 @@ vi:
       not_logged_in_yet: Bạn chưa đăng nhập, vui lòng đăng nhập để tiếp tục.
       delete_success: Xóa thành công
       delete_fail: Xóa thất bại, vui lòng kiểm tra lại
+      account_activation: Vui lòng kiểm tra mail để kích hoạt tài khoản của bạn.
     sessions_controller:
       login_fail_message: Email hoặc mật khẩu không đúng
+      unactivated_account: Tài khoản của bạn chưa được kích hoạt, vui lòng kiểm tra email để kích hoạt!
+    account_activations_controller:
+      activated_success: Tài khoản đã được kích hoạt!
+      activated_fail: Liên kết kích hoạt không hợp lệ!
   helpers:
     base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
     label:
@@ -109,4 +114,16 @@ vi:
       login: Đăng nhập
       newuser: Người dùng mới
       signup: Đăng ký ngay !
-      remember_me: Giữ tôi đăng nhập
+      remember_me: Nhớ mật khẩu
+  user_mailer:
+    account_activation:
+      heading: Ứng dụng mẫu
+      greeting: Chào
+      paragraph: Chào mừng đến với úng dụng mẫu! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn
+      activation_hyperlink: Kích hoạt
+      account_activation_subject: Kích hoạt tài khoản
+    password_reset:
+      paragraph: Tìm tôi ở
+  mailers:
+    user_mailer:
+      greeting: Chào
