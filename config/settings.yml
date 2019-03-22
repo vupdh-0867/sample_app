@@ -6,6 +6,7 @@ app:
       password_max_length: 6
       users_per_page: 5
       avatar_size: 40
+      reset_password_limit: 2
   helper:
     users_helper:
       avatar_size: 80
