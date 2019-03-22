@@ -1,0 +1,15 @@
+<footer class="footer">
+  <small>
+    <%= t(".first_author_title") %> <a href="https://www.railstutorial.org/"><%= t(".book_hyperlink") %></a>
+    <%= t(".second_author_title") %> <a href="http://www.michaelhartl.com/"><%= t(".author_hyperlink") %></a>
+  </small>
+  <nav>
+    <ul>
+      <li> <%= link_to t(".English"), locale:"en" %></li>
+      <li><%= link_to t(".Vietnamese"), locale:"vi" %></li>
+      <li><%= link_to t(".about"), about_path %></li>
+      <li><%= link_to t(".contact"), contact_path %></li>
+      <li><a href="http://news.railstutorial.org/"><%= t(".news") %></a></li>
+    </ul>
+  </nav>
+</footer>

@@ -2,10 +2,23 @@ vi:
   helpers:
     base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
   layouts:
+    header:
+      name: Ứng dụng mẫu
+      home: Trang chủ
+      help: Trợ giúp
+      login: Đăng nhập
     application:
       title: Hướng dẫn làm ứng dụng mẫu với Ruby on Rails
+    footer:
       English: Tiếng Anh
       Vietnamese: Tiếng Việt
+      about: Thông tin
+      contact: Liên hệ
+      news: Tin tức
+      first_author_title: Cuốn
+      book_hyperlink: Hướng dẫn Ruby on Rails
+      second_author_title: của
+      author_hyperlink: Michael Hartl
   static_pages:
     about:
       title: Thông tin
@@ -38,3 +51,9 @@ vi:
       first_paragraph: Đây là trang chủ của
       hyperlink: Hướng dẫn Ruby on Rails
       second_paragraph: ứng dụng mẫu.
+      register_button: Đăng ký ngay!
+  users:
+    new:
+      title: Đăng kí
+      heading: Đăng kí
+      paragraph: Đây sẽ là trang đăng kí cho người dùng mới.
