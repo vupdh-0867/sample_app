@@ -1,6 +1,15 @@
 en:
+  controllers:
+    users_controller:
+      user_not_found: This user is not existed
   helpers:
     base_title: Ruby on Rails Tutorial Sample App
+    label:
+      user:
+        name: Name
+        email: Email
+        password: Password
+        pasword_confirmation: Confirmation
   layouts:
     header:
       name: Sample app
@@ -58,4 +67,13 @@ en:
     new:
       title: Sign up
       heading: Sign up
-      paragraph: This will be a signup page for new users.
+      name: Name
+      email: Email
+      password: Password
+      password_confirmation: Confirmation
+      submit_button: Create my account
+  messages:
+    signup:
+      signup_successfully: Welcome to Sample App!
+      signup_error_1: The form contains
+      signup_error_2: errors

@@ -1,6 +1,15 @@
 vi:
+  controllers:
+    users_controller:
+      user_not_found: Không tìm thấy thông tin tài khoản này
   helpers:
     base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
+    label:
+      user:
+        name: Tên
+        email: Địa chỉ email
+        password: Mật khẩu
+        pasword_confirmation: Xác Nhận mật khẩu
   layouts:
     header:
       name: Ứng dụng mẫu
@@ -56,4 +65,13 @@ vi:
     new:
       title: Đăng kí
       heading: Đăng kí
-      paragraph: Đây sẽ là trang đăng kí cho người dùng mới.
+      name: Tên
+      email: Địa chỉ email
+      password: Mật khẩu
+      password_confirmation: Nhập lại mật khẩu
+      submit_button: Tạo tài khoản
+  messages:
+    signup:
+      signup_successfully: Chào mừng đến với ứng dụng mẫu!
+      signup_error_1: Đã phát sinh
+      signup_error_2: lỗi
