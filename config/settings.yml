@@ -4,3 +4,6 @@ app:
       name_max_length: 50
       email_max_length: 255
       password_max_length: 6
+  helper:
+    users_helper:
+      avatar_size: 80
