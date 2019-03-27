@@ -9,4 +9,13 @@ class User < ApplicationRecord
     length: {maximum: Settings.app.models.user.name_max_length}
   validates :password, presence: true,
     length: {minimum: Settings.app.models.user.password_max_length}
+
+  def self.digest string
+    if ActiveModel::SecurePassword.min_cost
+      cost = BCrypt::Engine.min_cost
+    else
+      cost = BCrypt::Engine.cost
+    end
+    BCrypt::Password.create(string, cost: cost)
+  end
 end

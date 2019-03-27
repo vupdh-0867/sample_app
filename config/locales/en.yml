@@ -2,6 +2,8 @@ en:
   controllers:
     users_controller:
       user_not_found: This user is not existed
+    sessions_controller:
+      login_fail_message: Invalid email/password combination
   helpers:
     base_title: Ruby on Rails Tutorial Sample App
     label:
@@ -10,12 +12,20 @@ en:
         email: Email
         password: Password
         pasword_confirmation: Confirmation
+      session:
+        email: Email
+        password: Password
   layouts:
     header:
       name: Sample app
       home: Home
       help: Help
       login: Log in
+      profile: Profile
+      setting: Settings
+      logout: Log out
+      user: Users
+      account: Account
     application:
       title: Ruby on Rails Tutorial Sample App
       English: English
@@ -77,3 +87,8 @@ en:
       signup_successfully: Welcome to Sample App!
       signup_error_1: The form contains
       signup_error_2: errors
+  sessions:
+    new:
+      login: Log in
+      newuser: New user
+      signup: Sign up !

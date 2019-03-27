@@ -2,6 +2,8 @@ vi:
   controllers:
     users_controller:
       user_not_found: Không tìm thấy thông tin tài khoản này
+    sessions_controller:
+      login_fail_message: Email hoặc mật khẩu không đúng
   helpers:
     base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
     label:
@@ -10,12 +12,20 @@ vi:
         email: Địa chỉ email
         password: Mật khẩu
         pasword_confirmation: Xác Nhận mật khẩu
+      session:
+        email: Địa chỉ email
+        password: Mật khẩu
   layouts:
     header:
       name: Ứng dụng mẫu
       home: Trang chủ
       help: Trợ giúp
       login: Đăng nhập
+      profile: Hồ sơ cá nhân
+      setting: Cài đặt
+      logout: Đăng xuất
+      user: Người dùng
+      account: Tài khoản
     application:
       title: Hướng dẫn làm ứng dụng mẫu với Ruby on Rails
     footer:
@@ -75,3 +85,8 @@ vi:
       signup_successfully: Chào mừng đến với ứng dụng mẫu!
       signup_error_1: Đã phát sinh
       signup_error_2: lỗi
+  sessions:
+    new:
+      login: Đăng nhập
+      newuser: Người dùng mới
+      signup: Đăng ký ngay !
