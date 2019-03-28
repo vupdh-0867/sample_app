@@ -1,7 +1,14 @@
 en:
+  will_paginate:
+      next_label: Next page
+      previous_label: Previous page
   controllers:
     users_controller:
       user_not_found: This user is not existed
+      update_success: Profile updated
+      not_logged_in_yet: Please log in.
+      delete_success: User deleted
+      delete_fail: Delete fail
     sessions_controller:
       login_fail_message: Invalid email/password combination
   helpers:
@@ -11,7 +18,7 @@ en:
         name: Name
         email: Email
         password: Password
-        pasword_confirmation: Confirmation
+        password_confirmation: Confirmation
       session:
         email: Email
         password: Password
@@ -82,6 +89,18 @@ en:
       password: Password
       password_confirmation: Confirmation
       submit_button: Create my account
+    edit:
+      title: Edit user
+      heading: Update your profile
+      password_confirmation: Confirmation
+      submit_button: Save changes
+      change_avatar_hyperlink: change
+    index:
+      title: All users
+      heading: All users
+    user:
+      delete_hyperlink: Delete
+      confirm_delete_message: You sure?
   messages:
     signup:
       signup_successfully: Welcome to Sample App!

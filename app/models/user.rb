@@ -9,7 +9,8 @@ class User < ApplicationRecord
   validates :name, presence: true,
     length: {maximum: Settings.app.models.user.name_max_length}
   validates :password, presence: true,
-    length: {minimum: Settings.app.models.user.password_max_length}
+    length: {minimum: Settings.app.models.user.password_max_length},
+    allow_nil: true
 
   def self.digest string
     BCrypt::Password.create(string, cost: get_cost)
