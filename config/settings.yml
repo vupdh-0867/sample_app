@@ -10,4 +10,15 @@ app:
     users_helper:
       avatar_size: 80
   yes_remember_me: 1
-  paginate:
+  developement:
+    host: localhost:3000
+    action_mailer:
+      address: smtp.gmail.com
+      port: 587
+      domain: example.com
+  production:
+    host: <your heroku app>.herokuapp.com
+    action_mailer:
+      address: smtp.sendgrid.net
+      port: 587
+      domain: heroku.com

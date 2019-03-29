@@ -1,0 +1,3 @@
+<%= t ".greeting" %> <%= @user.name %>,
+<%= t ".paragraph" %> :
+<%= link_to t(".activation_hyperlink"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>

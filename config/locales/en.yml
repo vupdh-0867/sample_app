@@ -9,8 +9,13 @@ en:
       not_logged_in_yet: Please log in.
       delete_success: User deleted
       delete_fail: Delete fail
+      account_activation: Please check your email to activate your account.
     sessions_controller:
       login_fail_message: Invalid email/password combination
+      unactivated_account: Account not activated. Check your email for the activation link.
+    account_activations_controller:
+      activated_success: Account activated!
+      activated_fail: Invalid activation link!
   helpers:
     base_title: Ruby on Rails Tutorial Sample App
     label:
@@ -112,3 +117,15 @@ en:
       newuser: New user
       signup: Sign up !
       remember_me: Remember me on this computer
+  user_mailer:
+    account_activation:
+      heading: Sample App
+      greeting: Hi
+      paragraph: Welcome to the Sample App! Click on the link below to activate your account
+      activation_hyperlink: Activate
+      account_activation_subject: Account activation
+    password_reset:
+      paragraph: Find me in
+  mailers:
+    user_mailer:
+      greeting: Hi
