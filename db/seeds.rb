@@ -6,7 +6,7 @@ User.create!(name: "Vu Phan",
   activated: true,
   activated_at: Time.zone.now)
 
-99.times do |n|
+50.times do |n|
   name  = Faker::Name.name
   email = "example-#{n+1}@sun-asterisk.com"
   password = "password"
