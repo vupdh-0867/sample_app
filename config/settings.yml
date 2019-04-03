@@ -7,9 +7,15 @@ app:
       users_per_page: 5
       avatar_size: 40
       reset_password_limit: 2
+    micropost:
+      content_max_length: 140
+      microposts_per_page: 5
+      picture_max_size: 5
   helper:
     users_helper:
       avatar_size: 80
+    microposts_helper:
+      avatar_size: 50
   yes_remember_me: 1
   developement:
     host: localhost:3000
@@ -23,3 +29,5 @@ app:
       address: smtp.sendgrid.net
       port: 587
       domain: heroku.com
+  picture_uploader:
+    size_limit: [400, 400]

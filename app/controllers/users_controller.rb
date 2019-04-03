@@ -5,9 +5,13 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def show
-    return if @user
-    flash[:danger] = t "controllers.users_controller.user_not_found"
-    redirect_to :root
+    if @user
+      @microposts = @user.microposts.newest.paginate page: params[:page],
+        per_page: Settings.app.models.micropost.microposts_per_page
+    else
+      flash[:danger] = t "controllers.users_controller.user_not_found"
+      redirect_to :root
+    end
   end
 
   def index
@@ -55,13 +59,6 @@ class UsersController < ApplicationController
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
-  end
-
-  def logged_in_user
-    return if logged_in?
-    store_location
-    flash[:danger] = t "controllers.users_controller.not_logged_in_yet"
-    redirect_to login_path
   end
 
   def correct_user

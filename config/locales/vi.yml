@@ -1,4 +1,7 @@
 vi:
+  evalators:
+    alert:
+      maximum: Kích thước file phải nhỏ hơn 5MB
   will_paginate:
     next_label: Trang kế
     previous_label: Trang trước
@@ -23,6 +26,12 @@ vi:
       password_reseted: Mật khẩu đã được đặt lại thành công.
       password_expired: Tác vụ đã hết hạn.
       user_not_found: Không tìm thấy người dùng với email này
+    microposts_controller:
+      created_success: Micropost được tạo thành công!
+      created_fail: Đăng Micropost thất bại, vui lòng kiểm tra lại!
+      deleted_success: Đã xóa Micropost!
+      deleted_fail: Xóa thất bại, vui lòng kiểm tra lại!
+      user_not_found: Không tìm thấy người dùng, vui lòng đăng nhập lại!
   helpers:
     base_title: Ứng dụng mẫu hướng dẫn Ruby on Rails
     label:
@@ -89,10 +98,16 @@ vi:
     home:
       title: Trang chủ
       heading: Ứng dụng mẫu
+      feed_heading: Danh sách bài đăng
       first_paragraph: Đây là trang chủ của
       hyperlink: Hướng dẫn Ruby on Rails
       second_paragraph: ứng dụng mẫu.
       register_button: Đăng ký ngay!
+      rails_logo: Logo của Rails
+  shared:
+    user_info:
+      view_profile: Xem thông tin cá nhân
+      micropost: bài đăng
   users:
     new:
       title: Đăng kí
@@ -111,9 +126,13 @@ vi:
     index:
       title: Tất cả người dùng
       heading: Tất cả người dùng
+    show:
+      micropost: Bài đăng
     user:
       delete_hyperlink: Xóa
       confirm_delete_message: Bạn có chắc chắn muốn xóa không?
+  micropost:
+    image_sizing_error: File phải nhỏ hơn 5MB
   messages:
     signup:
       signup_successfully: Chào mừng đến với ứng dụng mẫu!
@@ -151,6 +170,15 @@ vi:
       password_reset_paragraph_2: Liên kết này sẽ hết hạn trong 2 giờ.
       password_reset_paragraph_3: Nếu bạn không muốn đặt lại mật khẩu hãy bỏ qua email này, mật khẩu cũ sẽ không bị ảnh hưởng.
       reset_password_hyperlink: Đặt lại mật khẩu
+  microposts:
+    micropost:
+      time1: Được đăng
+      time2: trước
+      delete_hyperlink: Xóa
+      delete_confirm_message: Bạn có muốn xóa bài viết này không?
+    micropost_form:
+      content_placeholder: Nội dung...
+      submit_button: Đăng
   mailers:
     user_mailer:
       greeting: Chào
