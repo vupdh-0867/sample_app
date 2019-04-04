@@ -5,6 +5,8 @@ app:
       email_max_length: 255
       password_max_length: 6
       users_per_page: 5
+      following_per_page: 5
+      followers_per_page: 5
       avatar_size: 40
       reset_password_limit: 2
     micropost:
@@ -31,3 +33,4 @@ app:
       domain: heroku.com
   picture_uploader:
     size_limit: [400, 400]
+  follow_user_avatar_size: 30

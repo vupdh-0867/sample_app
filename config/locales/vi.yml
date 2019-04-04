@@ -13,6 +13,10 @@ vi:
       delete_success: Xóa thành công
       delete_fail: Xóa thất bại, vui lòng kiểm tra lại
       account_activation: Vui lòng kiểm tra mail để kích hoạt tài khoản của bạn.
+      following: Đang theo dõi
+      followers: Những người đang theo dõi bạn
+    relationships_controller:
+      user_not_available: Người dùng này không còn tồn tại nữa!
     sessions_controller:
       login_fail_message: Email hoặc mật khẩu không đúng
       unactivated_account: Tài khoản của bạn chưa được kích hoạt, vui lòng kiểm tra email để kích hoạt!
@@ -108,6 +112,9 @@ vi:
     user_info:
       view_profile: Xem thông tin cá nhân
       micropost: bài đăng
+    stats:
+      following: Đang theo dõi
+      followers: Người theo dõi
   users:
     new:
       title: Đăng kí
@@ -131,6 +138,13 @@ vi:
     user:
       delete_hyperlink: Xóa
       confirm_delete_message: Bạn có chắc chắn muốn xóa không?
+    show_follow:
+      view_profile_hyperlink: Xem thông tin
+      micropost_count: Bài đăng
+    follow:
+      follow_button: Theo dõi
+    unfollow:
+      unfollow_button: Bỏ theo dõi
   micropost:
     image_sizing_error: File phải nhỏ hơn 5MB
   messages:
