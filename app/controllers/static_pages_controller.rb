@@ -1,5 +1,8 @@
 class StaticPagesController < ApplicationController
+  #caches_page :home
+
   def home
+    handle_data
     return unless logged_in?
     @micropost  = current_user.microposts.build
     @feed_items = current_user.feed.paginate page: params[:page],
@@ -11,4 +14,10 @@ class StaticPagesController < ApplicationController
   def about; end
 
   def contact; end
+
+  private
+
+  def handle_data
+    sleep 5
+  end
 end
