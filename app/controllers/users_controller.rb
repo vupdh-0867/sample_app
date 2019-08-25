@@ -3,9 +3,11 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
+  #caches_action :show
 
   def show
     if @user
+      sleep 5
       @microposts = @user.microposts.newest.paginate page: params[:page],
         per_page: Settings.app.models.micropost.microposts_per_page
     else
