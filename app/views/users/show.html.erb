@@ -5,6 +5,7 @@
       <h1>
         <%= gravatar_for @user %>
         <%= @user.name %>
+        <a href="http://localhost:3000/en/users/1">self</a>
       </h1>
     </section>
     <section class="stats">
@@ -16,7 +17,11 @@
     <% if @user.microposts.any? %>
       <h3><%= t ".micropost" %> (<%= @user.microposts.count %>)</h3>
       <ol class="microposts">
-        <%= render @microposts %>
+        <% @microposts.each do |micropost| %>
+          <% cache(micropost) do %>
+            <%= render micropost %>
+          <% end %>
+        <% end %>
       </ol>
       <%= will_paginate @microposts %>
     <% end %>

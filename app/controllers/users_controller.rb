@@ -3,11 +3,20 @@ class UsersController < ApplicationController
   before_action :load_user, except: %i(index new create)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
-  #caches_action :show
+  before_action :befact, only: :show
+  after_action :aftact, only: :show
+  caches_page :show
+  # caches_action :show
+  # etag do
+  #    1  if %w("show").include? params[:action]
+  # end
 
   def show
     if @user
-      sleep 5
+      #fresh_when last_modified: @user.updated_at
+      #expires_in 2.minutes
+      #response.headers["Expires"] = 1.minutes.from_now.httpdate
+      puts "\e[31minside action\e[0m"
       @microposts = @user.microposts.newest.paginate page: params[:page],
         per_page: Settings.app.models.micropost.microposts_per_page
     else
@@ -36,7 +45,9 @@ class UsersController < ApplicationController
     end
   end
 
-  def edit; end
+  def edit
+    puts "\e[31minside action\e[0m"
+  end
 
   def update
     if @user.update user_params
@@ -72,6 +83,14 @@ class UsersController < ApplicationController
 
   private
 
+  def befact
+    puts "\e[32mbefore action\e[0m"
+  end
+
+  def aftact
+    puts "\e[32mafter action\e[0m"
+  end
+
   def user_params
     params.require(:user).permit :name, :email, :password,
       :password_confirmation
@@ -89,7 +108,7 @@ class UsersController < ApplicationController
   end
 
   def admin_user
-    return if current_user.admin?
+    return if h.admin?
     redirect_to root_path
   end
 end
