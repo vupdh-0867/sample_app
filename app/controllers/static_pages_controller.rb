@@ -2,11 +2,16 @@ class StaticPagesController < ApplicationController
   #caches_page :home
 
   def home
-    handle_data
+    #handle_data
     return unless logged_in?
     @micropost  = current_user.microposts.build
-    @feed_items = current_user.feed.paginate page: params[:page],
+    # @feed_items = current_user.feed.paginate page: params[:page],
+    #   per_page: Settings.app.models.micropost.microposts_per_page
+    @feed_items = Rails.cache.fetch('feeds1'){
+      handle_data
+      current_user.feed.paginate page: params[:page],
       per_page: Settings.app.models.micropost.microposts_per_page
+    }
   end
 
   def help; end
